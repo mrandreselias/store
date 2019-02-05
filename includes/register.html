@@ -1,0 +1,35 @@
+<div class="container">
+        <div class="row mt-3 mx-auto w-50"> 
+                <div class="card card-body">
+                    <h3 class="text-center text-secondary card-title">Register</h3>
+                    <form action="register.php" method="POST" id='register-form' autocomplete="off">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="name" placeholder="Enter your name here" onblur="textValidater(this);" onkeyup="textValidater(this);" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="lastname" placeholder="Enter your last name here" onblur="textValidater(this);" onkeyup="textValidater(this);" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                             <input class="form-control" type="email" name="email" placeholder="Email" onblur="textValidater(this);" onkeyup="textValidater(this);" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="username" placeholder="Enter your UserName" onblur="textValidater(this);" onkeyup="textValidater(this);"   autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" name="password"  placeholder="Password" onblur="textValidater(this);" onkeyup="textValidater(this);" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" name="passwordconfirm"  placeholder="Confirm your Password" onblur="textValidater(this);" onkeyup="textValidater(this);" required><span id='message'></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="acept" id="check" required> <label for="check">I Acept the  <a href="#" style="text-decoration:none;">terms and conditions</a></label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-info btn-block" type="submit" name="register" id="btn-form" >Register</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            
+        </div>
+    </div>

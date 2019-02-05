@@ -1,0 +1,63 @@
+<div class="container">
+        <div class="row mt-5 mx-auto w-50"> 
+                <div class="card card-body ">
+                    <h3 class="text-center text-secondary card-title">Upload a new Product</h3>
+                    <form action="upload.php" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="name" placeholder="Product name" onblur="textValidater(this);" onkeyup="textValidater(this);" autocomplete="off" required>
+                        </div>
+
+
+                       <div class="input-group mb-3" >
+                            <input type="number" class="form-control" name="price" placeholder="Indicate the price" onblur="textValidater(this);" onkeyup="textValidater(this);" required>
+                            <div class="input-group-append">
+                                <label class="input-group-text" for="price">$</label>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="number" name="existence" id="existence" placeholder="Indicate the existence" onblur="textValidater(this);" onkeyup="textValidater(this);" required>
+                            <div class="input-group-append">
+                                    <label class="input-group-text" for="price">#</label>
+                            </div>
+                        </div>
+    
+
+                        <div class="input-group mb-3">
+                                <select class="custom-select" name="category" id="category" required>
+                                  <option>choose a category</option>
+                                  <option value="tech_elect">Technology and Electronic</option>
+                                  <option value="sprt_fit">Sport and Fitness</option>
+                                  <option value="cloth_fash">clothes and fashion</option>
+                                  <option value="books">Books</option>
+                                  <option value="music">Music</option>
+
+                                </select>
+                                <div class="input-group-append">
+                                  <label class="input-group-text" for="category">Categories</label>
+                                </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <textarea class="form-control" style="resize:none;" name="description" id="description" rows="5" placeholder="Enter a description" onblur="textValidater(this);" onkeyup="textValidater(this);" required></textarea>
+                        </div>
+
+
+                        <div class="form-group mb-3">
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" name="img" id="image" required>
+                                  <label class="custom-file-label" for="image">Choose file</label>
+                                </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-info btn-block" type="submit" name="upload" id="btn-form">Upload</button>
+                        </div>
+                        
+                    </form>
+                    
+                </div>
+            
+        </div>
+    </div>
